@@ -1,13 +1,14 @@
 #include <iostream>
-#include <vector> // Example: using a standard library
+#include <string>
+#include <vector>
+#include "library.h"
+
+using namespace std;
 
 int main() {
-    std::cout << "Hello from the Colab-GitHub C++ project!" << std::endl;
-    std::vector<int> numbers = {1, 2, 3, 4, 5};
-    long long sum = 0;
-    for (int num : numbers) {
-        sum += +num;
-    }
-    std::cout << "Sum of numbers: " << sum << std::endl;
-    return 0;
+  cout << "Hello from the Colab-GitHub C++ project!" << endl;
+  Library MyLibrary("navi");
+  MyLibrary.greet();
+  cout << MyLibrary.getStudentCount() <<endl;
+  return 0;
 }
