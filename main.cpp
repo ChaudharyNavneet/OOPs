@@ -5,10 +5,12 @@
 
 using namespace std;
 
+
 int main() {
   cout << "Hello from the Colab-GitHub C++ project!" << endl;
-  Library MyLibrary("navi");
+  Library MyLibrary("Navi");
+  MyLibrary.getStudentCount();
   MyLibrary.greet();
-  cout << MyLibrary.getStudentCount() <<endl;
+  cout << "Owner:  " <<MyLibrary.getName() << "\n"<< "Students Count: " <<MyLibrary.getStudentCount() <<endl;
   return 0;
 }
